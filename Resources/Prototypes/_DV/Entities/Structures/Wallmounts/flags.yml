@@ -117,3 +117,12 @@
     state: trans_royal_shrimp_flag
   - type: Construction
     node: TransRoyalShrimpFlag
+
+- type: entity
+  parent: BaseFlagDV
+  id: TerraGovFlag
+  name: TerraGov Flag
+  description: '"A flag to signify the dignity and power of TerraGov"'
+  components:
+  - type: Sprite
+    state: terragov_flag
