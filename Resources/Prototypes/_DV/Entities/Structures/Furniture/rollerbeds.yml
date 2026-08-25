@@ -91,3 +91,33 @@
   - type: Tag
     tags:
     - PatientTransportation
+
+- type: entity
+  parent: HoverBedHolo
+  id: StasisHoverBed
+  name: stasis hoverbed
+  description: A Paramedic's best friend, used to frictionlessly carry patients around while providing a battery-powered option to medical stasis
+  components:
+  - type: Foldable
+    folded: true
+  - type: Strap
+    enabled: false
+  - type: PointLight
+    enabled: false
+  - type: AntiRotOnBuckle
+  - type: StasisBed
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: PowerCellDraw
+    drawRate: 1 # around 10 minutes on default cell
+  - type: Tag
+    tags:
+    - PatientTransportation
